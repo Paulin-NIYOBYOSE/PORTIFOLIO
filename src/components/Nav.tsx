@@ -72,8 +72,8 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden flex md:gap-40 gap-20 bg-slate-900 h-20 text-white ">
-        <span>Paulin</span>
+      <div className="lg:hidden flex md:gap-40 gap-12 bg-slate-900 h-20 text-white pt-2 ">
+        <span className="font-bold">Paulin</span>
         <div>
           <div>
             <ul className="hidden">
@@ -83,12 +83,14 @@ const Nav = () => {
               <li>Contact</li>
             </ul>
           </div>
-          <button>Hire me</button>
+          <button className="h-10 w-24 bg-purple rounded-md ml-10">
+            Hire me
+          </button>
         </div>
-        <div>
-          <MdOutlineLightMode />
+        <div className="bg-slate-800 w-10 flex items-center justify-center pb-1 rounded-lg cursor-pointer h-10">
+          <MdOutlineLightMode className="h-7 w-7 mt-1 cursor-pointer " />
         </div>
-        <RiMenu3Fill />
+        <RiMenu3Fill className="w-7 h-7" />
       </div>
     </nav>
   );
