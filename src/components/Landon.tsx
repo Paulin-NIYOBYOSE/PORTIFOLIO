@@ -16,7 +16,7 @@ const landon = () => {
             Motivated Fullstack <br />
             Developer
           </p>
-          <button className="h-12 w-36 bg-purple rounded-md ml-10 text-white mt-8 flex items-center justify-center gap-3">
+          <button className="h-12 w-40 bg-purple rounded-md ml-10 text-white mt-8 flex items-center justify-center gap-3">
             <MdOutlineDownloadForOffline />
             Download CV
           </button>
