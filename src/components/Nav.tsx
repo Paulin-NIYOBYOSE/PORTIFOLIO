@@ -41,7 +41,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="hidden lg:bg-slate-900 sm:h-10vh lg:flex justify-between z-50 text-white lg:py-5 px-20 py-4 ">
+      <div className="hidden bg-slate-900 sm:h-10vh lg:flex justify-between z-50 text-white lg:py-5 px-20 py-4 ">
         <div className="flex items-center flex-1">
           <span className="text-3xl font-bold ">Paulin</span>
           <div className="flex lg:gap-10">
@@ -72,7 +72,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden flex md:gap-40 gap-12 bg-slate-900 h-20 text-white pt-2 ">
+      <div className="lg:hidden flex md:gap-40 gap-6 bg-slate-900 h-20 text-white pt-2 ">
         <span className="font-bold">Paulin</span>
         <div>
           <div>
