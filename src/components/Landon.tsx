@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../components/images/hero.png";
+import { MdOutlineDownloadForOffline } from "react-icons/md";
 
 const landon = () => {
   return (
@@ -15,7 +16,8 @@ const landon = () => {
             Motivated Fullstack <br />
             Developer
           </p>
-          <button className="h-10 w-24 bg-purple rounded-md ml-10">
+          <button className="h-12 w-36 bg-purple rounded-md ml-10 text-white mt-8 flex items-center justify-center gap-3">
+            <MdOutlineDownloadForOffline />
             Download CV
           </button>
         </div>
