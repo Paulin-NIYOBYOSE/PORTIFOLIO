@@ -9,7 +9,7 @@ export default {
       spacing: {
         100: "25rem",
 
-        13: "33rem",
+        13: "30rem",
         96: "38rem",
       },
       colors: {

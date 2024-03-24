@@ -117,24 +117,24 @@ const Nav: React.FC = () => {
       <div
         className={`${
           isDarkMode ? "bg-white text-black" : "bg-slate-900 text-white"
-        } sm:h-10vh lg:flex justify-between lg:py-5 pl-4 gap-5  `}
+        } sm:h-10vh lg:flex justify-between lg:py-5 pl-4 gap-5`}
       >
-        <div className="pt-40 lg:pl-20 ">
+        <div className="pt-20 lg:pl-20">
           <h3
             className={`${
               isDarkMode
-                ? "  font-general-semibold bg-white text-slate-600"
+                ? "font-general-semibold bg-white text-slate-600"
                 : "bg-slate-900 text-white"
-            } text-5xl sm:h-10vh lg:flex justify-between z-50 lg:py-5  font-bold mb-10 `}
+            } text-5xl sm:h-10vh lg:flex justify-between z-50 lg:py-5 font-bold mb-10 md:mb-0`}
           >
-            Hi, I am Paulin Niyobyose
+            Hi, I am Paulin <br /> Niyobyose
           </h3>
           <p
             className={`${
               isDarkMode
-                ? "  font-general-semibold bg-white text-slate-600"
+                ? "font-general-semibold bg-white text-slate-600"
                 : "bg-slate-900 text-white"
-            } text-3xl sm:h-10vh lg:flex justify-between z-50 lg:py-5 `}
+            } text-3xl sm:h-10vh lg:flex justify-between z-50 lg:py-5`}
           >
             A Highly Skilled And <br />
             Motivated Fullstack <br />
@@ -149,6 +149,28 @@ const Nav: React.FC = () => {
           <img src={hero} alt="" />
         </div>
       </div>
+      {/* what i am doing section */}
+
+      <section className="bg-slate-900 h-13 w-full">
+        <h3>What i am doing</h3>
+        <div className="grid grid-cols-2 gap-10">
+          <div className="bg-slate-700 text-white h-32 rounded-md m-4 pl-5">
+            Web development
+          </div>
+
+          <div className="bg-slate-700 text-white h-32 rounded-md m-4 pl-5">
+            Web design
+          </div>
+
+          <div className="bg-slate-700 text-white h-32 rounded-md m-4 pl-5">
+            Mobile apps
+          </div>
+
+          <div className="bg-slate-700 text-white h-32 rounded-md m-4 pl-5">
+            Embedded systems
+          </div>
+        </div>
+      </section>
     </>
   );
 };
