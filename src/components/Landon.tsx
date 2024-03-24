@@ -30,8 +30,8 @@ const Nav: React.FC = () => {
       <nav>
         <div
           className={`hidden ${
-            isDarkMode ? "bg-white text-black" : "bg-slate-900 text-white"
-          } sm:h-10vh lg:flex justify-between z-50 lg:py-5 px-20 py-4 `}
+            isDarkMode ? "bg-white text-slate-700" : "bg-slate-900 text-white"
+          } sm:h-10vh lg:flex justify-between z-50 lg:py-5 px-20 py-4 font-bold `}
         >
           <div className="flex items-center flex-1">
             <div className="text-3xl font-bold flex ">
@@ -78,10 +78,13 @@ const Nav: React.FC = () => {
           </div>
         </div>
         <div
-          className="lg:hidden flex md:gap-40 gap-6"
-          style={{ backgroundColor: isDarkMode ? "white" : "#1a202c" }}
+          className="lg:hidden flex md:gap-40 gap-10 pt-3 pl-3 text-white"
+          style={{
+            backgroundColor: isDarkMode ? "white" : "#0F172A",
+            color: isDarkMode ? "#0F172A" : "white",
+          }}
         >
-          <span className="font-bold">Paulin</span>
+          <span className="font-bold ">Paulin</span>
           <div>
             <div>
               <ul className="hidden">
@@ -112,16 +115,27 @@ const Nav: React.FC = () => {
         </div>
       </nav>
       <div
-        className={`hidden ${
+        className={`${
           isDarkMode ? "bg-white text-black" : "bg-slate-900 text-white"
-        } sm:h-10vh lg:flex justify-between z-50 lg:py-5 px-20 py-4 `}
+        } sm:h-10vh lg:flex justify-between lg:py-5 pl-4 gap-5  `}
       >
-        <div className="pt-40 lg:pl-20 pl-5">
-          <h3 className="text-white text-4xl font-bold">
-            {" "}
+        <div className="pt-40 lg:pl-20 ">
+          <h3
+            className={`${
+              isDarkMode
+                ? "  font-general-semibold bg-white text-slate-600"
+                : "bg-slate-900 text-white"
+            } text-5xl sm:h-10vh lg:flex justify-between z-50 lg:py-5  font-bold mb-10 `}
+          >
             Hi, I am Paulin Niyobyose
           </h3>
-          <p className="text-white text-4xl mt-10 font-general-semibold">
+          <p
+            className={`${
+              isDarkMode
+                ? "  font-general-semibold bg-white text-slate-600"
+                : "bg-slate-900 text-white"
+            } text-3xl sm:h-10vh lg:flex justify-between z-50 lg:py-5 `}
+          >
             A Highly Skilled And <br />
             Motivated Fullstack <br />
             Developer
