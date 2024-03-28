@@ -10,7 +10,7 @@ export default {
         100: "25rem",
 
         13: "30rem",
-        96: "38rem",
+        96: "50rem",
       },
       colors: {
         purple: "#7B66FF",
